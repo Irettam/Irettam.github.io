@@ -33,7 +33,6 @@ $(document).keyup(function() {
     }
 });
 
-//DAME BOLA GIT
 function conexion(controller, action, param) {
     var user = new Object();
     param["controller"] = controller;
@@ -43,7 +42,7 @@ function conexion(controller, action, param) {
         type: "POST",
         contentType: "application/json",
         //url: 'http://192.168.0.10:4040/Meetings/webresources/Conexion/' + JSON.stringify(param),
-        url: 'https://162.243.128.151:8181/Meetings/webresources/Conexion/post',
+        url: 'http://appsky.openideas.com.ar:8181/Meetings/webresources/Conexion/post',
         data: JSON.stringify(param),
         success: function(data) {
             return data;
